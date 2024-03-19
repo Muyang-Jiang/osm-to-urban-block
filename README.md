@@ -26,9 +26,11 @@ In this project, urban blocks are defined as polygons delimited by major roads. 
 3. **Erasing** processed road network from the city polygon defined by the administrative boundary. This results in primary blocks.
 4. **Filtering and processing of blocks**. This include:
     1. Erasing water surfaces classified as *riverbank, reservoir and wetland* using OSM Water surface cover data*.*
-    2. Calculate the built-up ratio of blocks using Land-use/Land-cover data and select blocks where over 70% of the area are built.
+    2. Buffering roads to simulate road spaces and erase them from the blocks. The buffering distance varies based on the class of roads: road classified as *primary, motorway and trunk road* are buffered with 6 meters, p*edestrian, tertiary* and *unclassified* roads are not buffered, and all other roads are buffered with 3 meters. 
     3. merging small blocks (default value is one hectare) with the neighboring block with the longest shared border using "Eliminate" tool. To be safe this step is conducted twice.
-    4. Buffering roads to simulate road spaces and erase ****them from the blocks. The buffering distance varies based on the class of roads: road classified as *primary, motorway and trunk road* are buffered with 6 meters, p*edestrian, tertiary* and *unclassified* roads are not buffered, and all other roads are buffered with 3 meters. 
+    4. Calculate the built-up ratio of blocks using Land-use/Land-cover data and select blocks where over certain percentage (depending on the city, default value is 20%) of the area are built.
+
+
     
 
 ## How to use the ArcGIS Pro tool
