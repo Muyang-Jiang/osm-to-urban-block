@@ -23,8 +23,8 @@ In this project, urban blocks are defined as polygons delimited by major roads. 
 2. **Preprocessing road network data** to make it optimal for block delineation, which involves: 
     1. Extending roads by 20 meters using "Extent line" tool to connected roads, ensuring block enclosure. 
     2. Removing dead-end streets.
-3. Erasing ****processed road network from the city polygon defined by the administrative boundary. This results in primary blocks.
-4. Primary **filtering and processing of blocks**. This include:
+3. **Erasing** processed road network from the city polygon defined by the administrative boundary. This results in primary blocks.
+4. **Filtering and processing of blocks**. This include:
     1. Erasing water surfaces classified as *riverbank, reservoir and wetland* using OSM Water surface cover data*.*
     2. Calculate the built-up ratio of blocks using Land-use/Land-cover data and select blocks where over 70% of the area are built.
     3. merging small blocks (default value is one hectare) with the neighboring block with the longest shared border using "Eliminate" tool. To be safe this step is conducted twice.
