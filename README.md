@@ -2,6 +2,8 @@
 
 This project aim to delineate urban blocks using OpenStreetMap road network and land-cover/land-use data. It is being conducted in major cities in China, with potential for expansion to cities worldwide.
 
+![Example of blocks Xi'an, China](pic "pics/blocks-Xi_an.png")
+
 ## Environment Requirement
 
 This project is developed using the ArcGIS Pro Model Builder, which is subsequently converted into Python code through ArcPy. Therefore it is recommended to either install ArcGIS Pro (version 3.1.0 or later) to directly use the toolbox, or to import ArcPy into your Python environment and then run the python code.
