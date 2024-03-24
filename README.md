@@ -2,7 +2,7 @@
 
 This project aim to delineate urban blocks using OpenStreetMap road network and land-cover/land-use data. It is being conducted in major cities in China, with potential for expansion to cities worldwide.
 
-![Example of blocks Xi'an, China](pic "https://github.com/Muyang-Jiang/osm-to-urban-block/tree/main/pics/blocks-Xi_an.png")
+![Example of blocks Xi'an, China](https://github.com/Muyang-Jiang/osm-to-urban-block/blob/main/pics/blocks-Xi_an.png, "Example of blocks Xi'an, China")
 
 ## Environment Requirement
 
